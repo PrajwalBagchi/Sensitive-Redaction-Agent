@@ -1,0 +1,8 @@
+Dear Mr. [REDACTED_NAME],
+Thank you for reaching out to us regarding your application.
+We have received your documents and will review them shortly. If we need any further information,
+we will contact you at [REDACTED_EMAIL] or on your mobile number [REDACTED_PHONE].
+In the meantime, feel free to visit our careers page at [REDACTED_URL].
+Best regards,
+HR Department
+Example Company
