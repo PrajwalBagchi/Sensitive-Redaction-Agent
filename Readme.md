@@ -30,50 +30,46 @@ A command-line Python application that redacts sensitive information (like names
 ```bash
 git clone https://github.com/PrajwalBagchi/sensitive-info-redactor.git
 cd sensitive-info-redactor
-
-2. Install Requirements
-
+```
+### 2. Install Requirements
 ```bash
 pip install -r requirements.txt
-
-3. Install Tesseract OCR
+```
+###3. Install Tesseract OCR
 
 ```bash
 Windows: Download Tesseract and add it to your PATH
 Example path: C:\Program Files\Tesseract-OCR\tesseract.exe
-
-Linux/macOS:
+```
+###Linux/macOS:
 
 ```bash
 sudo apt install tesseract-ocr    # Ubuntu
 brew install tesseract            # macOS
-
-4. Add Your API Key
+```
+###4. Add Your API Key
 Create a .env file in the project root:
 
 ```bash
 GEMINI_API_KEY=your_gemini_api_key_here
-
-📄 Example Input
+```
+###📄 Example Input
 letter.txt
 
-```bash
-kotlin
+```kotlin
 Hi, my name is John Doe.
 Contact me at john@example.com or +1-123-456-7890.
 Visit https://example.com for more.
+```
+###📤 Usage
 
-📤 Usage
-
-```bash
-python main.py
+```python main.py
 
 Then input the file path:
-
-```bash
-java
+```
+```java
 Enter file path (.txt, .pdf, .jpg, .png): letter.txt
-
+```
 📁 Output
 For letter.txt, the output will be saved as:
 
@@ -82,8 +78,8 @@ txt
 Hi, my name is [REDACTED_NAME].
 Contact me at [REDACTED_EMAIL] or [REDACTED_PHONE].
 Visit [REDACTED_URL] for more.
-
-🧠 Powered By
+```
+###🧠 Powered By
 LangChain
 
 Google Gemini 1.5 Flash
