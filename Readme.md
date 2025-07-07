@@ -35,25 +35,25 @@ cd sensitive-info-redactor
 ```bash
 pip install -r requirements.txt
 ```
-###3. Install Tesseract OCR
+### 3. Install Tesseract OCR
 
 ```bash
 Windows: Download Tesseract and add it to your PATH
 Example path: C:\Program Files\Tesseract-OCR\tesseract.exe
 ```
-###Linux/macOS:
+### Linux/macOS:
 
 ```bash
 sudo apt install tesseract-ocr    # Ubuntu
 brew install tesseract            # macOS
 ```
-###4. Add Your API Key
+### 4. Add Your API Key
 Create a .env file in the project root:
 
 ```bash
 GEMINI_API_KEY=your_gemini_api_key_here
 ```
-###📄 Example Input
+### 📄 Example Input
 letter.txt
 
 ```kotlin
@@ -61,8 +61,7 @@ Hi, my name is John Doe.
 Contact me at john@example.com or +1-123-456-7890.
 Visit https://example.com for more.
 ```
-###📤 Usage
-
+### 📤 Usage
 ```python main.py
 
 Then input the file path:
@@ -70,7 +69,7 @@ Then input the file path:
 ```java
 Enter file path (.txt, .pdf, .jpg, .png): letter.txt
 ```
-📁 Output
+### 📁 Output
 For letter.txt, the output will be saved as:
 
 ```bash
@@ -79,7 +78,7 @@ Hi, my name is [REDACTED_NAME].
 Contact me at [REDACTED_EMAIL] or [REDACTED_PHONE].
 Visit [REDACTED_URL] for more.
 ```
-###🧠 Powered By
+### 🧠 Powered By
 LangChain
 
 Google Gemini 1.5 Flash
@@ -90,10 +89,10 @@ OpenCV
 
 PyPDF2
 
-📜 License
+### 📜 License
 MIT License
 
-👨‍💻 Author
+### 👨‍💻 Author
 Prajwal Bagchi — @PrajwalBagchi
 
 Feel free to contribute or open an issue.
